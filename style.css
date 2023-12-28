@@ -1,3 +1,7 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
 .container{
     border: solid red 1px;
     width: 50%;
@@ -10,3 +14,32 @@
     border: solid red 1px;
 }
 
+.todo{
+    width: 100%;
+    border: solid 1px blue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.todos p{
+    display: inline-block
+}
+
+.todo span{
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.fa-check-circle{
+    display: none;
+}
+
+.todo:hover .fa-circle {
+    display: none; /* Hides the regular circle icon */
+}
+
+.todo:hover .fa-check-circle {
+    display: inline-block; /* Displays the check-circle icon */
+}

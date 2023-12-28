@@ -1,12 +1,13 @@
 const todoBox = document.querySelector("#todo-box");
 const taskBtn = document.querySelector("#task-btn");
-const addTodoBtn = document.querySelector("#add-btn");
+const addTodoBtn = document.querySelector("#add-todo");
 const taskName = document.querySelector("#task-name");
 const description = document.querySelector("#description");
 const cancelFormBtn = document.querySelector("#cancel-form");
 const todoList = document.querySelector(".todos");
 
 const todos = [];
+let todoNum = 1;
 
 taskBtn.onclick = displayForm;
 cancelFormBtn.onclick = hideForm;
@@ -30,15 +31,24 @@ function addTodo(){
         description: description.value
     }
     todos.push(obj);
-    console.log("taskName.value");
-    displayTodos();
+
+    const HMTLString = `
+        <div class="todo">
+            <i class="far fa-regular fa-circle"></i>
+            <i class="far fa-regular fa-check-circle" ></i>
+            <p>${taskName.value}</p>
+            <span>
+            <i class="fa fa-regular fa-pencil-alt"></i>
+            <i class="fa fa-solid fa-trash"></i>
+            <span>
+        </div>
+        <p>${description.value}</p>  
+    `;
+
+    todoList.insertAdjacentHTML("beforeend", HMTLString);
+
+    // const div = document.createElement('div');
+    // div.textContent = `name: ${taskName.value} description: ${description.value}`;
+    // todoList.appendChild(div);
 }
 
-function displayTodos(){
-    for(const todo of todos){
-        const div = document.createElement('div');
-        div.textContent = `name: ${todo.name} description: ${todo.description}`;
-        todoList.appendChild(div);
-
-    }
-}
