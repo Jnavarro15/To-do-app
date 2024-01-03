@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 75%;
-    border: solid 1px tan;
+    background-color: #050404;
 }
 
 .todo{
@@ -75,4 +75,5 @@ input {
     outline: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
   }
+  
   
