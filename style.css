@@ -30,31 +30,37 @@ main{
 
 .main-content{
     display: flex;
-
+    height: 100vh;
 }
 
 aside{
     border: solid white 1px;
     flex-basis: 15%;
+    height: 100%;
 }
 
 nav {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav div {
-    margin-left: 150px;
+    justify-self: flex-end;
+    display: flex;
 }
 
-h1 {
-    justify-self: center;
-    margin: auto;
+nav h1 {
+    text-align: center;
+    flex-grow: 1;
 }
 
 .container{
     border: solid white 1px;
+    display: flex;
     width: 100%;
     flex-basis: 85%;
+    flex-direction: column;
 }
 
 aside{
