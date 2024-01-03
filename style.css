@@ -40,21 +40,25 @@ aside{
 
 nav {
     display: flex;
-    
 }
 
 nav div {
-    justify-self: flex-end;
+    margin-left: 150px;
 }
 
 h1 {
     justify-self: center;
+    margin: auto;
 }
 
 .container{
     border: solid white 1px;
     width: 100%;
     flex-basis: 85%;
+}
+
+aside{
+    background-color: #2f2b3a;
 }
 
 h1,h3{
