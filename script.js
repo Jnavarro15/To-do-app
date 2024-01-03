@@ -5,6 +5,8 @@ const taskName = document.querySelector("#task-name");
 const description = document.querySelector("#description");
 const cancelFormBtn = document.querySelector("#cancel-form");
 const todoList = document.querySelector(".todos");
+const dateInput = document.querySelector("#date-input");
+dateInput.valueAsDate = new Date();
 
 const todos = [];
 let todoNum = 1;
@@ -27,24 +29,33 @@ function hideForm(){
 
 function addTodo(e){
     e.preventDefault();
+    const newD = new Date();
+    
+
     if(taskName.value !== ""){
         let obj = {
             name: taskName.value,
             description: description.value
         }
         todos.push(obj);
-    
+        console.log(dateInput.value);
         const HMTLString = `
             <div class="todo">
-                <i class="far fa-regular fa-circle"></i>
-                <i class="far fa-regular fa-check-circle" ></i>
-                
-                <h4>${taskName.value}</h4>
-                <h6>${description.value}</h6> 
-                <span>
-                <i class="fa fa-regular fa-pencil-alt"></i>
-                <i class="fa fa-solid fa-trash"></i>
-                <span>
+                <div class="todo-header">
+                    <div>
+                        <i class="far fa-regular fa-circle"></i>
+                        <i class="far fa-regular fa-check-circle" ></i>
+                        <h4>${taskName.value}</h4>
+                    </div>
+                    <p>Date</p>
+                </div>
+                <div class="todo-footer">
+                    <h6>${description.value}</h6>
+                    <div> 
+                        <i class="fa fa-regular fa-pencil-alt"></i>
+                        <i class="fa fa-solid fa-trash"></i>
+                    </div>
+                </div>
         
             </div>
  
