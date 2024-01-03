@@ -1,5 +1,6 @@
 :root {
-    --black: #282828;
+    --darkpurple: #1a1625;
+    --darkgrey: #282828;
     --purple: #9171f8;
     --light-purple: #ba9ffb;
     --yellow: #f1be32;
@@ -17,7 +18,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--black);
+    background-color: var(--darkpurple);
 }
 
 main{
@@ -37,6 +38,7 @@ aside{
     border: solid white 1px;
     flex-basis: 15%;
     height: 100%;
+    background-color: var(--darkgrey);
 }
 
 nav {
@@ -73,10 +75,6 @@ nav h1 {
     flex-direction: column;
 }
 
-aside{
-    background-color: #2f2b3a;
-}
-
 h1,h3{
     text-align: center;
     color: #9171f8;
@@ -86,6 +84,14 @@ h1,h3{
 #task-btn{
     margin: 10px auto 10px auto;
     display: block;
+    border: none;
+    background-color: var(--purple);
+    padding: 10px 10px;
+    border-radius: 7%;
+}
+
+#task-btn:hover{
+    opacity: .7;
 }
 
 #todo-box{
@@ -99,7 +105,7 @@ h1,h3{
     flex-direction: column;
     justify-content: center;
     width: 75%;
-    background-color: var(--light-purple);
+    background-color: var(--darkgrey);
 }
 
 .title-date {
@@ -121,8 +127,8 @@ h1,h3{
     display: flex;
     align-items: center;
     flex-direction: column;
-
-    background-color: #ba9ffb;
+    color: var(--light-purple);
+    background-color:var(--darkgrey);
     
 }
 
@@ -174,10 +180,10 @@ h1,h3{
 input {
     padding: 5px;
     border: none;
-    color: black;
+    color: var(--light-purple);
     border-radius: 10px; /* Set border radius for rounded corners */
 
-    background-color: #ba9ffb; /* Set background color */
+    background-color: var(--darkgrey); /* Set background color */
   }
   
   /* Optional: Add focus styles */
