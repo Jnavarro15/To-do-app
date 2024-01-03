@@ -1,5 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
+    background-color: #7e62ca;
 }
 
 .container{
@@ -9,8 +10,12 @@ body{
 
 }
 
+h1{
+    text-align: center;
+}
 #task-btn{
     margin: auto;
+    display: block;
 }
 
 #todo-box{
@@ -64,13 +69,7 @@ body{
     display: inline-block; /* Displays the check-circle icon */
 }
 
-body {
-    background-color: #7e62ca; /* Set your desired background color */
-  }
 
-h1{
-    text-align: center;
-}
 
 /* Apply rounded styles to input with background color */
 input {
