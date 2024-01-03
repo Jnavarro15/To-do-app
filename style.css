@@ -23,6 +23,13 @@ body{
     border: solid 1px tan;
 }
 
+.cancel-submit{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
 .todo{
     width: 100%;
     border: solid 1px blue;
