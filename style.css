@@ -96,11 +96,8 @@ input {
     border: none;
     color: black;
     border-radius: 10px; /* Set border radius for rounded corners */
-<<<<<<< HEAD
-    /* background-color: #248484; Set background color */
-=======
+
     background-color: #ba9ffb; /* Set background color */
->>>>>>> 8a45f10f1e8a94070368e41dd3f6f109c2aca86e
   }
   
   /* Optional: Add focus styles */
