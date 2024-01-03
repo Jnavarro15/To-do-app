@@ -9,30 +9,42 @@
 </head>
 <body>
     <main>
-        <div class="container">
+        <nav>
             <h1>Lets Get To Fucking Work!</h1>
-            <div class="todos">
-                <h3>Todo List</h3>
+            <div>
+                <p>Profile</p>
+                <p>image</p>
             </div>
-            <button id="task-btn">Enter Task +</button>
-            
-            <div id="todo-box">
-                <form>
-                    <span class="title-date">
-                        <input type = "text" placeholder="Enter Task" id="task-name" required></input>
-                        <input type="date" id="date-input" />
-                    </span>
-                    <span class="desc">
-                        <input type = "text" placeholder="Description" id="description"></input>
-                    </span>
-                    <span class="cancel-submit">
-                        <button id="add-todo" type="submit">Create Task</button>
-                        <button id="cancel-form" type="button">X</button>
-                    </span>
-                </form>
+        </nav>
+        <div class="main-content">
+            <aside>
+                <h3>Todos</h3>
+            </aside>
+            <div class="container">
+                <div class="todos">
+                    <h3>Todo List</h3>
+                </div>
+                <button id="task-btn">Enter Task +</button>
                 
+                <div id="todo-box">
+                    <form>
+                        <span class="title-date">
+                            <input type = "text" placeholder="Enter Task" id="task-name" required></input>
+                            <input type="date" id="date-input" />
+                        </span>
+                        <span class="desc">
+                            <input type = "text" placeholder="Description" id="description"></input>
+                        </span>
+                        <span class="cancel-submit">
+                            <button id="add-todo" type="submit">Create Task</button>
+                            <button id="cancel-form" type="button">X</button>
+                        </span>
+                    </form>
+                    
+                </div>
             </div>
         </div>
+        
         
     </main>
    
