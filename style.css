@@ -43,15 +43,25 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-nav div {
-    justify-self: flex-end;
+.empty {
+    flex-grow: 1;
+}
+.empty p{
+    color: transparent;
+}
+
+nav .profile {
     display: flex;
+    flex-grow: 1;
 }
 
 nav h1 {
     text-align: center;
+    margin: 0;
+    width: 100%;
     flex-grow: 1;
 }
 
