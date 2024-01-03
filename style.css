@@ -1,6 +1,6 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: #7e62ca;
+    background-color: #121212;
 }
 
 .container{
@@ -10,9 +10,11 @@ body{
 
 }
 
-h1{
+h1,h4{
     text-align: center;
+    color: #9171f8;
 }
+
 #task-btn{
     margin: auto;
     display: block;
@@ -29,7 +31,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     width: 75%;
-    background-color: #0ed9be;
+    background-color: #ba9ffb;
 }
 
 .cancel-submit{
@@ -75,9 +77,9 @@ h1{
 input {
     padding: 5px;
     border: none;
-    color: antiquewhite;
+    color: black;
     border-radius: 10px; /* Set border radius for rounded corners */
-    background-color: #050404; /* Set background color */
+    background-color: #ba9ffb; /* Set background color */
   }
   
   /* Optional: Add focus styles */
