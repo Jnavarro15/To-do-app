@@ -9,6 +9,10 @@ body{
 
 }
 
+#task-btn{
+    margin: auto;
+}
+
 #todo-box{
     display: none;
     justify-content: center;
