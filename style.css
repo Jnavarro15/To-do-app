@@ -3,7 +3,7 @@ body{
 }
 
 .container{
-    border: solid red 1px;
+    border: solid rgb(0, 0, 0) 1px;
     width: 50%;
     margin: auto;
 
@@ -11,7 +11,6 @@ body{
 
 #todo-box{
     display: none;
-    border: solid red 1px;
 }
 
 .todo{
@@ -42,4 +41,13 @@ body{
 
 .todo:hover .fa-check-circle {
     display: inline-block; /* Displays the check-circle icon */
+}
+
+body {
+    background-color: #7e62ca; /* Set your desired background color */
+  }
+
+h1{
+    text-align: center;
+    
 }
