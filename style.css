@@ -1,3 +1,20 @@
+:root {
+    --white: #fff;
+    --light-grey: #f5f6f7;
+    --dark-grey: #0a0a23;
+    --yellow: #f1be32;
+    --golden-yellow: #feac32;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
 body{
     font-family: 'Open Sans', sans-serif;
     background-color: #7e62ca;
@@ -75,9 +92,9 @@ h1{
 input {
     padding: 5px;
     border: none;
-    color: antiquewhite;
+    color: black;
     border-radius: 10px; /* Set border radius for rounded corners */
-    background-color: #050404; /* Set background color */
+    /* background-color: #248484; Set background color */
   }
   
   /* Optional: Add focus styles */
