@@ -15,7 +15,6 @@ addTodoBtn.onclick = addTodo;
 
 function displayForm(){
     todoBox.style.display = "flex";
-    todoBox.style.justifyContent = "center";
     taskBtn.style.display = "none";
 }
 

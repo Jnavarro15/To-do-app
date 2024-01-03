@@ -11,12 +11,16 @@ body{
 
 #todo-box{
     display: none;
+    justify-content: center;
+    width: 100%;
 }
 
 #todo-box form{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 75%;
+    border: solid 1px tan;
 }
 
 .todo{
