@@ -83,4 +83,13 @@ input {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
   }
   
+  #add-todo{
+    background-color: blue;
+    color: white;
+  }
+
+  #cancel-form{
+    background-color: red;
+    color: white;
+  }
   
