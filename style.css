@@ -49,5 +49,20 @@ body {
 
 h1{
     text-align: center;
-    
 }
+
+/* Apply rounded styles to input with background color */
+input {
+    padding: 5px;
+    border: none;
+    color: antiquewhite;
+    border-radius: 10px; /* Set border radius for rounded corners */
+    background-color: #050404; /* Set background color */
+  }
+  
+  /* Optional: Add focus styles */
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  }
+  
