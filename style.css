@@ -13,6 +13,12 @@ body{
     display: none;
 }
 
+#todo-box form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .todo{
     width: 100%;
     border: solid 1px blue;
