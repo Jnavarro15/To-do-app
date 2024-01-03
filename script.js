@@ -25,28 +25,34 @@ function hideForm(){
     description.value = "";
 }
 
-function addTodo(){
-    let obj = {
-        name: taskName.value,
-        description: description.value
+function addTodo(e){
+    e.preventDefault();
+    if(taskName.value !== ""){
+        let obj = {
+            name: taskName.value,
+            description: description.value
+        }
+        todos.push(obj);
+    
+        const HMTLString = `
+            <div class="todo">
+                <i class="far fa-regular fa-circle"></i>
+                <i class="far fa-regular fa-check-circle" ></i>
+                <p>${taskName.value}</p>
+                <span>
+                <i class="fa fa-regular fa-pencil-alt"></i>
+                <i class="fa fa-solid fa-trash"></i>
+                <span>
+            </div>
+            <p>${description.value}</p>  
+        `;
+    
+        todoList.insertAdjacentHTML("beforeend", HMTLString);    
     }
-    todos.push(obj);
-
-    const HMTLString = `
-        <div class="todo">
-            <i class="far fa-regular fa-circle"></i>
-            <i class="far fa-regular fa-check-circle" ></i>
-            <p>${taskName.value}</p>
-            <span>
-            <i class="fa fa-regular fa-pencil-alt"></i>
-            <i class="fa fa-solid fa-trash"></i>
-            <span>
-        </div>
-        <p>${description.value}</p>  
-    `;
-
-    todoList.insertAdjacentHTML("beforeend", HMTLString);
-
+    else{
+        console.log("no input");
+    }
+    
     // const div = document.createElement('div');
     // div.textContent = `name: ${taskName.value} description: ${description.value}`;
     // todoList.appendChild(div);
