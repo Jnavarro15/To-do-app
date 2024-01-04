@@ -32,6 +32,7 @@ main{
 .main-content{
     display: flex;
     height: 100vh;
+    justify-content: center;
 }
 
 aside{
@@ -71,7 +72,7 @@ nav h1 {
     border: solid white 1px;
     display: flex;
     width: 100%;
-    flex-basis: 85%;
+    flex-basis: 100%;
     flex-direction: column;
 }
 
@@ -155,7 +156,9 @@ h1,h3{
     display: inline-block
 }
 
-
+.hidden{
+    display: none;
+}
 
 .todo {
     
@@ -174,6 +177,9 @@ h1,h3{
     display: inline-block; /* Displays the check-circle icon */
 }
 
+.fa-user{
+    color: var(--purple);
+}
 
 
 /* Apply rounded styles to input with background color */

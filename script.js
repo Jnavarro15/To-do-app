@@ -5,6 +5,8 @@ const taskName = document.querySelector("#task-name");
 const description = document.querySelector("#description");
 const cancelFormBtn = document.querySelector("#cancel-form");
 const todoList = document.querySelector(".todos");
+const sideBarBtn = document.querySelector('#side-bar-btn');
+
 const dateInput = document.querySelector("#date-input");
 dateInput.valueAsDate = new Date();
 
@@ -14,6 +16,11 @@ let todoNum = 1;
 taskBtn.onclick = displayForm;
 cancelFormBtn.onclick = hideForm;
 addTodoBtn.onclick = addTodo;
+
+
+sideBarBtn.addEventListener('click', function() {
+    document.querySelector('aside').classList.toggle('hidden');
+  });
 
 function displayForm(){
     todoBox.style.display = "flex";
