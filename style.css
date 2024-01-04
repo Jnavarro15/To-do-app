@@ -106,6 +106,7 @@ h1,h3{
     background-color: var(--darkgrey);
     border-radius: 10px;
     padding: 5px;
+    margin-top: 10px;
 }
 
 .title-date {
@@ -124,12 +125,13 @@ h1,h3{
 
 .todo{
     width: 100%;
-    border: solid 1px blue;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--light-purple);
     background-color:var(--darkgrey);
+    border-radius: 10px;
+    padding: 5px;
     
 }
 
