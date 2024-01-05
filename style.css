@@ -107,8 +107,7 @@ h1,h3{
     background-color: rgba(40, 40, 40, 0.3);
     border-radius: 10px;
     padding: 5px;
-    height: 100%;
-    
+    margin-top: 10px;
 }
 
 .title-date {
@@ -137,13 +136,10 @@ h1,h3{
     align-items: center;
     flex-direction: column;
     color: var(--light-purple);
-    padding: 10px;
-    margin-bottom: 5px;
-    border-bottom: solid 1px var(--darkgrey);
-}
-
-.todo input{
-    background-color: var(--darkpurple);
+    background-color:var(--darkgrey);
+    border-radius: 10px;
+    padding: 5px;
+    
 }
 
 .todo h4 {
