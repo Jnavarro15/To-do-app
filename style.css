@@ -290,3 +290,16 @@ input {
     padding:4px 10px;
     border-radius: 7%;
   }
+
+  #add-category-btn{
+    font-size: 20px;
+    background-color: var(--darkgrey);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: none;
+  }
+
+  button:hover{
+    opacity: .5;
+  }
