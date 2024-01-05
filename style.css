@@ -220,6 +220,10 @@ h1,h3{
     color: var(--purple);
 }
 
+.fa-bars:hover {
+    cursor: pointer;
+}
+
 
 .fa-user{
     color: var(--purple);

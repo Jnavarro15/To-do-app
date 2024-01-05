@@ -19,19 +19,15 @@ const dateInput = document.querySelector("#date-input");
 dateInput.valueAsDate = new Date();
 console.log(dateInput);
 
+let todosObj = {
+    name: "Todos",
+    todos: []
+}
 const todos = [];
 let todoNum = 1;
 
 taskBtn.onclick = displayForm;
 cancelFormBtn.onclick = hideForm;
-
-addCategoryBtn.addEventListener('click', function(){
-    displayCategoryForm();
-})
-
-sideBarBtn.addEventListener('click', function() {
-    document.querySelector('aside').classList.toggle('hidden');
-  });
 
 function displayCategoryForm(){
     addCategoryDiv.style.display = "none";
@@ -49,6 +45,17 @@ function hideForm(){
     taskName.value = "";
     description.value = "";
 }
+
+addCategoryBtn.addEventListener('click', function(){
+    displayCategoryForm();
+
+})
+
+sideBarBtn.addEventListener('click', function() {
+    document.querySelector('aside').classList.toggle('hidden');
+  });
+
+
 
 addTodoBtn.addEventListener('click', function(e){
     e.preventDefault();
