@@ -256,3 +256,26 @@ input {
   .category-input-div{
     display: none;
   }
+
+  #cancel-category{
+    background-color: transparent;
+    border: none;
+    color: rgb(107, 101, 101);
+    padding: 5px;
+  }
+
+
+  .category-button{
+    background-color: transparent;
+    font-size: 25px;
+    color: var(--purple);
+    margin: 5px;
+  }
+
+  .regular-button{
+    display: block;
+    border: none;
+    background-color: var(--purple);
+    padding:4px 10px;
+    border-radius: 7%;
+  }
