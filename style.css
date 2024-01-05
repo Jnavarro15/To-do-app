@@ -302,4 +302,5 @@ input {
 
   button:hover{
     opacity: .5;
+    cursor: pointer;
   }
