@@ -22,14 +22,29 @@
             </div>
         </nav>
         <div class="main-content">
-            <aside class="hidden">
-                <h3>Todos</h3>
+            <aside id="side-bar"  class="hidden">
+                <div class="category">
+                    <button type="button">
+                        <h3>Todos</h3>
+                    </button>
+                </div>
+                <div class="add-category">
+                    <button type="button" id="add-category-btn">
+                        <h3>+</h3>
+                    </button>
+                </div>
+                <div class="category-input-div">
+                    <input type="text" placeholder="Enter Category" id="category-input">
+                    <button type="click" id="cancel-category">x</button> 
+                    <button type="click" id="cancel-category">+</button> 
+                </div>
+                
             </aside>
             <div class="container">
                 <div class="todo-list">
                     <div class="todo-list-header">
                         <button type="button" id="side-bar-btn"><i class="fas fa-solid fa-bars"></i></button>
-                        <h3 id="category">Todo List</h3>
+                        <h3 id="category-name">Todo List</h3>
                         <button type="button" id="filter-btn">Filter</button>
                     </div>
                     

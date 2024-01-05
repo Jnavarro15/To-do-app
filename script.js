@@ -5,8 +5,15 @@ const taskName = document.querySelector("#task-name");
 const description = document.querySelector("#description");
 const cancelFormBtn = document.querySelector("#cancel-form");
 const todoList = document.querySelector(".todo-list");
+const sideBar = document.querySelector('#side-bar');
 const sideBarBtn = document.querySelector('#side-bar-btn');
-const category = document.querySelector('#category');
+const category = document.querySelector('#category-name');
+
+const addCategoryDiv = document.querySelector('.add-category');
+const categoryDiv = document.querySelector('.category-input-div');
+
+const addCategoryBtn = document.querySelector('#add-category-btn');
+const categoryInput = document.querySelector('#category-input');
 
 const dateInput = document.querySelector("#date-input");
 dateInput.valueAsDate = new Date();
@@ -17,12 +24,19 @@ let todoNum = 1;
 
 taskBtn.onclick = displayForm;
 cancelFormBtn.onclick = hideForm;
-addTodoBtn.onclick = addTodo;
 
+addCategoryBtn.addEventListener('click', function(){
+    displayCategoryForm();
+})
 
 sideBarBtn.addEventListener('click', function() {
     document.querySelector('aside').classList.toggle('hidden');
   });
+
+function displayCategoryForm(){
+    addCategoryDiv.style.display = "none";
+    categoryDiv.style.display = "flex"
+}
 
 function displayForm(){
     todoBox.style.display = "flex";
@@ -36,7 +50,7 @@ function hideForm(){
     description.value = "";
 }
 
-function addTodo(e){
+addTodoBtn.addEventListener('click', function(e){
     e.preventDefault();
 
     if(taskName.value !== ""){
@@ -85,9 +99,12 @@ function addTodo(e){
     else{
         console.log("no input");
     }
+})
+// function addTodo(e){
+   
     
-    // const div = document.createElement('div');
-    // div.textContent = `name: ${taskName.value} description: ${description.value}`;
-    // todoList.appendChild(div);
-}
+//     // const div = document.createElement('div');
+//     // div.textContent = `name: ${taskName.value} description: ${description.value}`;
+//     // todoList.appendChild(div);
+// }
 
