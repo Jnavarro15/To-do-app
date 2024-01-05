@@ -35,7 +35,7 @@ main{
 }
 
 aside{
-    flex-basis: 15%;
+    flex-basis: 20%;
     height: 100%;
     background-color: var(--darkgrey);
 }
@@ -96,6 +96,7 @@ h1,h3{
     display: none;
     justify-content: center;
     width: 100%;
+    height: 25%;
 }
 
 #todo-box form{
@@ -103,15 +104,23 @@ h1,h3{
     flex-direction: column;
     justify-content: center;
     width: 75%;
-    background-color: var(--darkgrey);
+    background-color: rgba(40, 40, 40, 0.3);
     border-radius: 10px;
     padding: 5px;
+    height: 100%;
+    
 }
 
 .title-date {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+
+
+#date-input{
+    color: var(--light-purple);
 }
 
 .cancel-submit{
@@ -124,15 +133,22 @@ h1,h3{
 
 .todo{
     width: 100%;
-    border: solid 1px blue;
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--light-purple);
-    background-color:var(--darkgrey);
-    
+    padding: 10px;
+    margin-bottom: 5px;
+    border-bottom: solid 1px var(--darkgrey);
 }
 
+.todo input{
+    background-color: var(--darkpurple);
+}
+
+.todo h4 {
+    margin-left: 5px;
+}
 .todo-footer{
     display: flex;
     width: 100%;
@@ -152,8 +168,23 @@ h1,h3{
     
 }
 
-.todos p{
-    display: inline-block
+.todo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.todo-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+}
+
+.todo-list-header button {
+    height: 50%;
 }
 
 .hidden{
@@ -161,7 +192,7 @@ h1,h3{
 }
 
 .todo {
-    
+    width: 75%;
     margin-right: 5px;
 }
 
@@ -169,13 +200,23 @@ h1,h3{
     display: none;
 }
 
-.todo:hover .fa-circle {
+.todo-header:hover .fa-circle {
     display: none; /* Hides the regular circle icon */
 }
 
-.todo:hover .fa-check-circle {
+.todo-header:hover .fa-check-circle {
     display: inline-block; /* Displays the check-circle icon */
 }
+
+#side-bar-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.fa-bars{
+    color: var(--purple);
+}
+
 
 .fa-user{
     color: var(--purple);
@@ -188,8 +229,7 @@ input {
     border: none;
     color: var(--light-purple);
     border-radius: 10px; /* Set border radius for rounded corners */
-
-    background-color: var(--darkgrey); /* Set background color */
+    background-color: transparent; /* Set background color */
   }
   
   /* Optional: Add focus styles */
