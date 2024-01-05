@@ -270,6 +270,8 @@ input {
     font-size: 25px;
     color: var(--purple);
     margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
   }
 
   .regular-button{
