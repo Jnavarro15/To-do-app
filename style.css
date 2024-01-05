@@ -267,8 +267,14 @@ input {
     padding: 5px;
   }
 
+  .category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
   .category-button{
+    width: 75%;
     background-color: transparent;
     font-size: 25px;
     color: var(--purple);
