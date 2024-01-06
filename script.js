@@ -25,12 +25,13 @@ const submitCategory = document.querySelector('#accept-category');
 dateInput.valueAsDate = new Date();
 console.log(dateInput);
 
-let todosObj = {
-    name: "Todos",
-    todos: []
-}
+const todosArr = [];
+
+
+
 const todos = [];
 let todoNum = 1;
+let categoryNum = 1;
 
 taskBtn.onclick = displayForm;
 cancelFormBtn.onclick = hideForm;
@@ -51,6 +52,37 @@ function hideForm(){
     taskName.value = "";
     description.value = "";
 }
+
+submitCategory.addEventListener('click', function(e){
+    e.preventDefault();
+
+    if(categoryInput.value !== ""){
+        
+        let todosObj = {
+            name: categoryInput.value,
+            todos: []
+        }
+
+        todosArr.push(todosObj);
+        categoryNum++;
+        
+        const HMTLString = `
+        <div class="category">
+            <button type="button" class="category-button">
+            ${categoryInput.value}
+            </button>
+        </div>
+        `;
+    
+        addCategoryDiv.insertAdjacentHTML("beforebegin", HMTLString);
+        categoryInput.value = ""; 
+        categoryDiv.style.display = "none";
+        addCategoryDiv.style.display = "flex";
+    }
+    else{
+        console.log("no input");
+    }
+})
 
 addCategoryBtn.addEventListener('click', function(){
     displayCategoryForm();
