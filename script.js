@@ -14,8 +14,14 @@ const categoryDiv = document.querySelector('.category-input-div');
 
 const addCategoryBtn = document.querySelector('#add-category-btn');
 const categoryInput = document.querySelector('#category-input');
-
 const dateInput = document.querySelector("#date-input");
+
+
+const cancelCategory = document.querySelector('#cancel-category');
+const submitCategory = document.querySelector('#accept-category');
+
+
+
 dateInput.valueAsDate = new Date();
 console.log(dateInput);
 
@@ -54,6 +60,11 @@ addCategoryBtn.addEventListener('click', function(){
 sideBarBtn.addEventListener('click', function() {
     document.querySelector('aside').classList.toggle('hidden');
   });
+
+cancelCategory.addEventListener('click', function() {
+    categoryDiv.style.display = "none";
+    addCategoryDiv.style.display = "flex";
+});
 
 
 

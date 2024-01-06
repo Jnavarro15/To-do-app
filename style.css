@@ -264,7 +264,7 @@ input {
     display: none;
   }
 
-  #cancel-category{
+  #cancel-category,#accept-category{
     background-color: transparent;
     border: none;
     color: rgb(107, 101, 101);
